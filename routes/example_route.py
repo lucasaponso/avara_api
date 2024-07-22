@@ -1,5 +1,5 @@
 from fastapi import HTTPException, Depends, status, APIRouter, Request, Query
-
+##init of router
 router = APIRouter(
     prefix="/example_route"
 )
