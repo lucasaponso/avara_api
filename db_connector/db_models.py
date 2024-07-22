@@ -1,8 +1,7 @@
 from sqlalchemy import Column, String, Float, Integer
 from .connect import Base
 
-class books(Base):
-    __tablename__ = 'books'
-    bookId = Column(Integer, primary_key=True, unique=True)
-    author = Column(String(255))
-    title = Column(String(255))
+class user(Base):
+    __tablename__ = 'user'
+    username = Column(String(255), primary_key=True)
+    password = Column(String(255))
